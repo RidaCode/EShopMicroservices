@@ -1,0 +1,96 @@
+########################################
+# .NET / ASP.NET Core
+########################################
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.diff
+*.tmp
+*.temp
+*.mdb
+
+# Logs
+logs/
+*.log
+
+# Web publish output
+wwwroot/dist/
+wwwroot/lib/
+appsettings.*.local.json
+appsettings.Development.json
+
+########################################
+# Entity Framework Core
+########################################
+#migrations folder is tracked — don't ignore the folder itself
+# Ignore EF Core design-time & temporary files
+*.db
+*.db-shm
+*.db-wal
+
+########################################
+# Docker
+########################################
+# Ignore Docker build artifacts
+docker-compose.override.yml
+docker-compose.*.yml
+.dockerignore
+
+# Ignore Docker volumes (if local)
+volumes/
+data/
+*.tar
+
+########################################
+# Rider / IntelliJ IDEA
+########################################
+.idea/
+*.iml
+*.iws
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf/
+
+# Rider plugin-generated files
+.idea/.idea.*
+.idea/httpRequests
+.idea/gradle.xml
+.idea/modules.xml
+
+########################################
+# macOS System Files
+########################################
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+
+########################################
+# Node / Frontend (if used in solution)
+########################################
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+.env
+.env.*
